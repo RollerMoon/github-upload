@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>test</title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}ul{list-style: none;}
+			body{background-color: #272822;	color: antiquewhite;}
+			.container{
+				width: 100%;
+			}
+			.main{
+				width: 1222px;
+				/* height: 1200px; */
+				margin: auto;
+				background-color: #333335;
+			}
+			header{
+				width: 100%;
+				padding: 20px 0 0 0;
+				text-align: center;
+			}
+			section{
+				padding: 30px 150px;
+				width: auto;
+			}
+			.question, .end, .conclude{
+				font-size: 28px;
+			}
+			
+			.options{
+				margin-bottom: 20px;
+			}
+			
+			.options button, .submit{
+				outline: none;
+				width: 255px;
+				height: 45px;
+				margin: 20px  30px 0 0 ;
+				border: 0;
+				border-radius: 6px;
+				background: #f1f0ed;
+				color: black;
+				line-height: 40px;
+				font-size: 24px;
+				text-align: center;
+				
+			}
+			.end{
+				border-top: 3px solid #ed5a65;
+				padding-top: 19px;
+				margin-top: 40px;
+			}
+			.submit{
+				/* margin: 20px  30px 0 280px; */
+			}
+			.conclude{
+				height: 160px;
+				padding: 30px 0 0 221px;
+				/* margin-bottom: 50px; */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="main">
+				<header class="">
+					<h1 class="">C语言基础小测试</h1>
+				</header>
+				<section class="text">
+					<p class="question">
+						C程序由一个或多个???组成。
+					</p>
+					<div class="options">
+						<button class="false">变量</button>
+						<button class="false">参数</button>
+						<button class="true">函数</button>
+					</div>
+					<p class="question">
+						每个C程序必须包含一个???函数，这是C程序要调用的第1个函数。
+					</p>
+					<div class="options">
+						<button class="false">mani()</button>
+						<button class="true">main()</button>
+						<button class="false">mian()</button>
+					</div>
+					<p class="question">
+						一个简单的函数由???和其后的一对???组成。
+					</p>
+					<div class="options">
+						<button class="true">函数头，花括号</button>
+						<button class="false">函数头，中括号</button>
+						<button class="false">函数体，中括号</button>
+					</div>
+					<p class="question">
+						???中是由声明、判断、循环等语句组成的???。
+					</p>
+					<div class="options">
+						<button class="true">花括号，函数体</button>
+						<button class="false">花括号，函数头</button>
+						<button class="false">中括号，函数体</button>
+					</div>
+					
+					<p class="question">
+						大部分语句都以???结尾。
+					</p>
+					<div class="options">
+						<button class="false">句号</button>
+						<button class="false">逗号</button>
+						<button class="true">分号</button>
+					</div>
+					<p class="question">
+						声明语句为变量指定???，并标识该变量中存储的???。
+					</p>
+					<div class="options">
+						<button class="true">变量名，数据类型</button>
+						<button class="false">标识符，数据结构</button>
+						<button class="false">关键字，数据类型</button>
+					</div>
+					<p class="question">
+						变量名是一种???。
+					</p>
+					<div class="options">
+						<button class="false">字符串</button>
+						<button class="false">关键字</button>
+						<button class="true">标识符</button>
+					</div>
+					<p class="question">
+						赋值表达式语句把???赋给变量，或者更一般地说，把???赋给存储空间。
+					</p>
+					<div class="options">
+						<button class="false">数字</button>
+						<button class="true">值</button>
+						<button class="false">字符</button>
+					</div>
+					<p class="question">
+						函数表达式语句用于调用指定的已命名???。调用函数执行完毕后，程序会返回到函数调用???的语句继续执行。
+					</p>
+					<div class="options">
+						<button class="false">变量，前面</button>
+						<button class="false">函数，前面</button>
+						<button class="true">函数，后面</button>
+					</div>
+					
+					<p class="question">
+						printf()函数用于???想要表达的内容和变量的值。
+					</p>
+					<div class="options">
+						<button class="false">输入</button>
+						<button class="false">接收</button>
+						<button class="true">输出</button>
+					</div>
+					
+					<p class="question">
+						一门语言的语法是一套规则，用于管理语言中各有效语句组合在一起的方式。<br>语句的语义是语句要表达的意思。编译器可以检测出???错误，但是程序里的???错误只有在编译完之后才能从程序的行为中表现出来。
+					</p>
+					<div class="options">
+						<button class="true">语法，语义</button>
+						<button class="false">语义，语法</button>
+						<button class="false">语义，语义</button>
+					</div>
+					<p class="question">
+						检查程序是否有语义错误要跟踪程序的状态，即检查程序每执行一步后变量的???。
+					</p>
+					<div class="options">
+						<button class="false">数据类型</button>
+						<button class="true">值</button>
+						<button class="false">变量名</button>
+					</div>
+					<p class="question">
+						最后，关键字是C语言的词汇。下列选项中，哪个<b style="color: #ed5a65;">不是</b>关键字呢?
+					</p>
+					<div class="options">
+						<button class="false">int</button>
+						<button class="false">return</button>
+						<button class="true">don't</button>
+					</div>
+					
+					<p class="end">检查好了嘛，检查好了就提交吧~<br>点击下方按钮便可提交，提交后不可修改噢~</p>
+					<button class="submit">计算得分qwq</button>
+					<p class="conclude"></p>
+				</section>
+			</div>
+		</div>
+		<script type="text/javascript">
+			let options = document.getElementsByClassName('options');
+			let conclude = document.querySelector('.conclude');
+			let questionNum = 0; //题目数量
+			let regSelected = /selected/, regAnswer = /true|false/, regTrueAnswer = /true selected/,
+				regTrue = /true/, regFalse = /false/;
+			for(let i = 0; i < options.length; i++){
+				options[i].onclick = function(e){
+					conclude.innerHTML = '';
+					questionNum = options.length;
+					let result = e.target;
+					for(let i = 0; i < this.children.length; i++){
+						this.children[i].style.background = '#f1f0ed';
+					}
+					let optAnswer = toString(result.className);
+					if(regSelected.test(result.className) == false && regAnswer.test(result.className) == true){
+						//点到未选中选项时
+						for(let i = 0; i < this.children.length; i++){
+							this.children[i].classList.remove("selected");
+						}
+						result.style.background = 'gold';
+						result.classList.add("selected");
+					}else if(regSelected.test(result.className) == true && regAnswer.test(result.className) == true){
+						result.style.background = '#f1f0ed';
+						result.classList.remove("selected");
+					}
+				}
+			}
+			
+			let submit = document.getElementsByClassName('submit')[0],
+				btn = document.getElementsByTagName('button');
+			submit.onclick = function(){
+				let counterTrue = 0,
+				counterSelected = 0;
+				for(let i = 0; i < btn.length; i++){
+					//下面处理获取到的btn
+					if(regSelected.test(btn[i].className) == true){
+						counterSelected++;
+						//作答完成后
+						if(regTrueAnswer.test(btn[i].className) == true){
+							counterTrue++;
+						}
+						if(counterSelected == questionNum){
+							//标注正确答案
+							for(let i = 0; i < btn.length; i++){
+								if(regTrue.test(btn[i].className) == true){
+									btn[i].style.background = '#5dbe8a';
+								}
+							}
+							for(let i = 0; i < options.length; i++){
+								options[i].onclick = null;
+							}
+							submit.onclick = null;
+							//结束作答提示语
+							let grade = parseInt(100 * (counterTrue / questionNum));
+							if(grade <= 60){
+								conclude.innerHTML = `
+									${questionNum}道小题，答对了${counterTrue}道，正确率${grade}%<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;再接再厉呀~`
+							}else if(grade > 90){
+								conclude.innerHTML = `
+									${questionNum}道小题，答对了${counterTrue}道，正确率${grade}%<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;太棒啦ヾ(^▽^*)))`
+							}else {
+								conclude.innerHTML = `
+									${questionNum}道小题，答对了${counterTrue}道，正确率${grade}%<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;还不错哦~`
+							}
+							// counterSelected = 0;
+						}
+					}
+				}
+				if(counterSelected < questionNum){
+					counterSelected = 0;
+					//未完成提示语
+					conclude.innerHTML = `完成所有题目再提交啦!`
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+	<link rel="stylesheet" href="//at.alicdn.com/t/font_8d5l8fzk5b87iudi.css"/>
+	<link rel="stylesheet" href="css/selfCommon.css"/>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+</head>
+<body>
+	
+	<span class="iconfont icon-guanyu" id="shareBtn"
+	style="padding: 500px 0 0 50px;">share</span>
+
+<!-- <button id='share'> 分享 </button> -->
+
+	<script type="text/javascript" charset="utf-8">
+    mui.init();
+		mui.plusReady(function(){
+			let aimApp = null;
+			
+			plus.share.getServices(function(data){
+				aimApp = data;
+			}, function(){;
+				mui.toast('获取分享服务失败');
+			});
+			// console.log(aimApp)
+			
+			mui('body').on('tap', '#shareBtn', function(){
+				let buttons = [{title:"选项一",color:"#00ffff"},{title:"QQ"},{title:"weChat"}];
+				let actionstyle = {title:"Hello HTML5 plus!",cancel:"取消", buttons:buttons};
+				// console.log(aimApp)
+				// console.log(JSON.stringify(aimApp[1]))
+				// console.log(aimApp[0].id)
+				
+				plus.nativeUI.actionSheet(actionstyle,
+					function(e){
+					if(e.index > 0){
+						let eInd = e.index - 1;
+						console.log(eInd);
+						// console.log(JSON.stringify(aimApp))
+						let shareObj, appSceen;
+						switch(eInd){
+							case 0:
+								shareObj = aimApp[2];
+								appSceen = 'WXSceneSession'
+								break;
+							case 1:
+								shareObj = aimApp[eInd]
+								break;
+							case 2: 
+								shareObj = aimApp[2];
+								appSceen = 'WXSceneTimeline'
+						}
+						let msg = {
+							title: '测试标题',
+							content:'我写出了一个分享链接诶',
+							thumbs: ['love.png'],
+							href: 'https://www.bilibili.com/',
+							extra:{
+								scene: appSceen,
+							}
+						}
+						
+						shareObj.send(msg, 
+							()=>{
+								mui.toast('分享成功!!');
+							},
+							()=>{
+								mui.toast('分享失败~~');
+								console.log('分享失败~~');
+							})
+					}
+				})
+			})
+		})
+    </script>
+</body>
+</html>
